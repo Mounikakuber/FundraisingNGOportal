@@ -1,0 +1,1024 @@
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+  
+  .top-bar {
+      background: #20212B;
+      padding: 10px 0;
+      color: #ffffff;
+  }
+
+  .top-bar .text {
+      display: inline-block;
+      margin-right: 20px;
+  }
+
+  .top-bar .text i {
+      margin-right: 5px;
+  }
+
+  .carousel-item {
+      height: 600px;
+  }
+
+  .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+  }
+
+  .service-item {
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+      transition: .5s;
+  }
+
+  .service-item:hover {
+      background: #FF6F61;
+      color: #ffffff;
+  }
+
+  .service-icon {
+      margin-bottom: 20px;
+      font-size: 50px;
+      color: #FF6F61;
+  }
+
+  .service-item:hover .service-icon {
+      color: #ffffff;
+  }
+
+  .statistics-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.counter {
+    margin: 20px 0;
+    color: #333;
+}
+
+.counter i {
+    font-size: 50px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.counter h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.counter p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* countdown*/
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container Styling */
+.statistics-section {
+    position: relative;
+    padding: 20px 0;
+}
+
+.image-overlay {
+    position: relative;
+    text-align: center;
+}
+
+.background-image {
+    width: 100%;
+    /* Full width of the website */
+    height: 300px;
+    /* Set a smaller height */
+    object-fit: cover;
+    /* Ensures the image scales correctly */
+    opacity: 0.4;
+    /* Adjust transparency of the image */
+    z-index: 1;
+}
+
+/* Transparent Overlay */
+.transparent-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: #fff;
+    /* Text color for the counters */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    /* Adds contrast to text */
+}
+
+/* Counter Styling */
+.counter {
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.counter i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.counter h2 {
+    font-size: 36px;
+    margin: 5px 0;
+}
+
+.counter p {
+    font-size: 18px;
+}
+
+/* Add hover effect for counters */
+.counter:hover {
+    transform: scale(1.1);
+}
+
+  /* Causes Section Styling */
+                   .causes-section {
+                       padding: 2rem 0;
+                   }
+        
+                   .causes-row {
+                       display: flex;
+                       flex-wrap: nowrap;
+                       gap: 1rem;
+                       overflow-x: auto;
+                       scrollbar-width: thin;
+                       /* For modern browsers */
+                       padding: 1rem 0;
+                   }
+        
+                   .causes-row::-webkit-scrollbar {
+                       height: 8px;
+                       /* For Chrome, Safari, and Edge */
+                   }
+        
+                   .causes-row::-webkit-scrollbar-thumb {
+                       background: #ccc;
+                       border-radius: 4px;
+                   }
+        
+                   .causes-row::-webkit-scrollbar-track {
+                       background: #f9f9f9;
+                   }
+        
+                   .cause-card {
+                       flex: 0 0 auto;
+                       width: 300px;
+                       border: 1px solid #ddd;
+                       border-radius: 8px;
+                       transition: transform 0.3s ease, box-shadow 0.3s ease;
+                   }
+        
+                   .cause-card:hover {
+                       transform: translateY(-10px);
+                       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                   }
+        
+                   .card-img-container {
+                       overflow: hidden;
+                       border-top-left-radius: 8px;
+                       border-top-right-radius: 8px;
+                   }
+        
+                   .card-img {
+                       width: 100%;
+                       height: 200px;
+                       object-fit: cover;
+                       transition: transform 0.3s ease;
+                   }
+        
+                   .card-img:hover {
+                       transform: scale(1.1);
+                   }
+        
+                   .cause-card-body {
+                       padding: 1rem;
+                   }
+        
+                   .progress {
+                       height: 10px;
+                       border-radius: 5px;
+                       margin-top: 0.5rem;
+                   }
+
+
+ .donation-section {
+     position: relative;
+     width: 100%;
+     min-height: 600px;
+     display: flex;
+     align-items: center;
+     background: #f8f9fa;
+ }
+
+ .donation-section img {
+     width: 50%;
+     height: 600px;
+     object-fit: cover;
+ }
+
+ .donation-overlay {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: rgba(255, 255, 255, 0.95);
+     padding: 2rem;
+ }
+
+ .donation-form {
+     width: 100%;
+     max-width: 450px;
+     padding: 2rem;
+     border-radius: 10px;
+     background: white;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .form-input {
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 15px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+ }
+
+ .donation-amount {
+     display: flex;
+     gap: 10px;
+     margin: 15px 0;
+ }
+
+ .amount-btn {
+     flex: 1;
+     padding: 10px;
+     border: 2px solid #007bff;
+     background: white;
+     color: #007bff;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .donate-btn {
+     width: 100%;
+     padding: 12px;
+     background: #007bff;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     margin-top: 15px;
+     cursor: pointer;
+ }
+
+
+
+
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+}
+
+.section-header p {
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #FDBE33;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+    .section-header h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-header h2 {
+        font-size: 35px;
+    }
+}
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.about .about-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.about .about-tab {
+    width: 100%;
+}
+
+.about .about-tab .nav.nav-pills .nav-link {
+    padding: 8px;
+    font-weight: 600;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    transition: none;
+}
+
+.about .about-tab .nav.nav-pills .nav-link:hover,
+.about .about-tab .nav.nav-pills .nav-link.active {
+    color: #FDBE33;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #FDBE33;
+}
+
+.about .about-tab .tab-content {
+    padding: 15px 0 0 0;
+    background: transparent;
+}
+
+.about .about-tab .tab-content .container {
+    padding: 0;
+}
+
+@media (max-width: 991.98px) {
+    .about .section-header {
+        margin-top: 30px;
+    }
+}
+
+
+/*******************************/
+/********* Service CSS *********/
+/*******************************/
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    transition: .3s;
+}
+
+.service .service-icon {
+    position: relative;
+    width: 60px;
+}
+
+.service .service-icon i {
+    position: relative;
+    display: block;
+    color: #FDBE33;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 5px;
+}
+
+.service .service-text {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.service .service-text::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 0;
+    background: rgba(0, 0, 0, .1);
+}
+
+.service .service-text::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: -1px;
+    background: #FDBE33;
+}
+
+.service .service-text h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.service .service-text p {
+    margin: 0;
+}
+
+/* Parallax base styles */
+.facts {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: background-position 0.5s ease-out;
+}
+
+.about-img {
+    transition: transform 0.5s ease-out;
+}
+
+/* Tab transitions */
+.tab-pane {
+    transition: opacity 0.3s ease-out;
+}
+
+.tab-pane.show {
+    opacity: 1;
+}
+
+/* Donation form animations */
+.donation-form {
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.form-input:focus,
+.donate-btn:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Add smooth transitions for all interactive elements */
+.nav-link,
+.btn,
+input,
+textarea {
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+/*learn about us*/
+/* Image Section */
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+}
+
+.animated-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in animation for the image */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Tab - Styling */
+.about-tab .nav-pills .nav-link {
+    color: blue;
+    /* Default blue text */
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    /* Remove any borders for a cleaner look */
+    text-align: center;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.about-tab .nav-pills .nav-link:hover,
+.about-tab .nav-pills .nav-link.active {
+    color: orange;
+    /* Orange on hover or active */
+    background-color: transparent;
+    /* Ensure no background change */
+    text-decoration: underline;
+    /* Optional: underline for emphasis */
+}
+
+
+
+/* Add this to your existing CSS */
+
+/* Scroll Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Active State */
+.navbar .nav-link.active {
+    color: #FF6F61 !important;
+    font-weight: bold;
+}
+
+/* Section Padding for Scroll Offset */
+section {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+/* Add animation delays for cascade effect */
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.delay-4 {
+    transition-delay: 0.4s;
+}
+
+/* Additional hover effects for navigation */
+.navbar .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #FF6F61;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+
+/* Floating Button Styles  donate*/
+.floating-donate {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    z-index: 999;
+}
+
+.floating-donate-btn {
+    background-color: #dc3545;
+    position: fixed;
+    right: 90px;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.floating-donate-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Modal Styles  donate */
+.donate-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.donate-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.amount-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.amount-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.amount-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.amount-btn.selected {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .floating-donate {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-donate-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+.whatsapp-contact {
+    margin: 20px 0;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Optional: Add a floating WhatsApp button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 150px;
+    /* Positioned above your donate button */
+    right: 90px;
+    z-index: 999;
+}
+
+.whatsapp-float .whatsapp-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float .whatsapp-btn i {
+    margin: 0;
+    font-size: 32px;
+}
+
+
+/* WhatsApp positioning */
+.whatsapp-float {
+    position: fixed;
+    bottom: 80px;
+    /* Moved up to make room for chat button */
+    right: 20px;
+    z-index: 1000;
+}
+
+
+
+/*chat bot*/
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chat-container {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 16px;
+    background: #2563eb;
+    color: white;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.message {
+    margin-bottom: 12px;
+    max-width: 80%;
+}
+
+.bot-message {
+    margin-right: auto;
+}
+
+.user-message {
+    margin-left: auto;
+}
+
+.message-content {
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: #f3f4f6;
+    font-size: 14px;
+}
+
+.user-message .message-content {
+    background: #2563eb;
+    color: white;
+}
+
+.chat-input-container {
+    padding: 16px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 8px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    outline: none;
+}
+
+#send-message {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#send-message:hover {
+    background: #1d4ed8;
+}
+
+
+
+
+/*footer popup*/
+ .popup-message {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: #fff;
+     border: 1px solid #ccc;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     z-index: 1000;
+     padding: 20px;
+     border-radius: 8px;
+ }
+
+ .popup-message .popup-content {
+     text-align: center;
+ }
+
+ .popup-message h4 {
+     margin-bottom: 10px;
+ }
+
+ .popup-message p {
+     margin-bottom: 20px;
+ }
+
+ .popup-message button {
+     background: #007bff;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .popup-message button:hover {
+     background: #0056b3;
+ }

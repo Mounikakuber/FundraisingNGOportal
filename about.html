@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="js/nav-handler.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!-- Jarallax CSS (optional for default styles) -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.css">
+       <!-- Jarallax JS -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.min.js"></script>
+         <!-- Google Fonts Import -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+       <!-- Bootstrap CSS -->
+       <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+       <!-- Font Awesome (for icons) -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <!--testimonial-->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="home.html" class="navbar-brand">About Us</a>
+            <!-- Updated data-bs-toggle and data-bs-target for Bootstrap 5 -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+            
+                    <!-- <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="causes.html" class="nav-link">Causes</a></li>
+                    <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li> -->
+                    <div class="nav-item dropdown">
+                        <!-- Updated data-bs-toggle for Bootstrap 5 -->
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu">
+                            <a href="home.html" class="dropdown-item">Detail Page</a>
+                            <a href="gallery.html" class="dropdown-item">Gallery</a>
+                            <!-- <a href="#floating-donate" class="dropdown-item">Donate Now</a> -->
+                            <a href="contact.html" class="dropdown-item">Become A Volunteer</a>
+                        </div>
+                    </div>
+                    <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
+                    <!-- <a class="btn btn-primary ms-3" href="#">Donate Now</a> -->
+                    <button id="logout" class="btn btn-outline-danger"> Logout</button>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+      
+    <!-- Nav Bar End -->
+    <!-- Jarallax Section Start -->
+      <div class="hero-section">
+    <div class="jarallax" style="height: 400px;" data-jarallax='{"speed": 0.2}'>
+        <img class="jarallax-img" src="images\about1.jpg" alt="Background Image">
+    </div>
+    </div>
+    <!-- Jarallax Section End -->
+
+   
+<!---about us--->
+    <br><br>
+   <!-- About Section -->
+<div id="about" class="container">
+    <div class="row">
+        <!-- Image Section -->
+        <div class="col-lg-6">
+            <div class="jarallax" style="height: 500px;" data-jarallax='{"speed": 0.2}'>
+                <img class="jarallax-img" src="images/water.jpg" alt="About Us Image">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="section-header">
+                <br><br><br><br>
+                <p>Learn About Us</p>
+                <h2>Worldwide Non-Profit Charity Organization</h2>
+            </div>
+            <div class="about-tab">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#tab-content-1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#tab-content-2">Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#tab-content-3">Vision</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-content-1" class="tab-pane fade show active">
+                        NGOs are private agencies that can support development at local, national, and international levels by organizing indigenous groups.
+                    </div>
+                    <div id="tab-content-2" class="tab-pane fade">
+                        The Foundation for Social Change and Inclusion works for the social development and integration of underprivileged individuals, groups, and communities.
+                    </div>
+                    <div id="tab-content-3" class="tab-pane fade">
+                        Our work aims to break the vicious cycle of poverty and social isolation and to restore hope for a better future.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p id="#what we do">What We Do?</p>
+                        <h2>We believe that we can save more lifes with you</h2>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-diet"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Healthy Food</h3>
+                                    <p>Organic Yogurt. Men and women between 19 and 50 years of age need 1000 milligrams of calcium a day and 1200 milligrams if 50 or older</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-water"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Pure Water</h3>
+                                    <p>While most sources of public drinking water are closely regulated and safe to drink, many prefer to drink purified water.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-healthcare"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Health Care</h3>
+                                    <p>Health care is delivered by health professionals and allied health fields.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-education"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Primary Education</h3>
+                                    <p>Primary education is typically the first stage of formal education, coming after preschool/kindergarten and before secondary school.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-home"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Residence Facilities</h3>
+                                    <p>Residence or residence facility means multi-family facilities including apartments, townhouses, condominiums, dormitories, hotels, motels, resorts, extended care facilities, or similar entities, facilities, or structures.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-social-care"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Social Care</h3>
+                                    <p>Social care is a term that generally describes all forms of personal care and other practical assistance for children, young people and adults who need extra support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+   
+       <!-- Counter Section -->
+<div class="statistics-section jarallax" style="background-image: url('images/handstogether.jpeg');">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="counter">
+                    <i class="fas fa-globe-asia fa-3x animated bounce"></i>
+                    <h2 class="count" data-target="100">0</h2>
+                    <p>Countries</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter">
+                    <i class="fas fa-users fa-3x animated bounce"></i>
+                    <h2 class="count" data-target="300">0</h2>
+                    <p>Volunteers</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter">
+                    <i class="fas fa-bullseye fa-3x animated bounce"></i>
+                    <h2 class="count" data-target="10000">0</h2>
+                    <p>Our Goal</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter">
+                    <i class="fas fa-hand-holding-heart fa-3x animated bounce"></i>
+                    <h2 class="count" data-target="3000">0</h2>
+                    <p>Raised</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--testimonial-->
+<div class="testimonial">
+    <div class="container">
+        <div class="section-header">
+            <p>Testimonial</p>
+            <h2>What people are talking about our charity activities</h2>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="testimonial-item">
+                                <img src="images/testimonial1.jpg" alt="Yoga Guru Baba Ramdev">
+                                <h3>Yoga Guru Baba Ramdev</h3>
+                                <p>Co-founder, Patanjali Ayurved Ltd.</p>
+                                <blockquote>Narayan Seva Sansthan has treated around 3,70,000 polio-afflicted children to stand on their own and made a world record.</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="testimonial-item">
+                                <img src="images/testimonial2.jpg" alt="Mukesh Ambani">
+                                <h3>Mukesh Dhirubhai Ambani</h3>
+                                <p>Reliance Industries Ltd.</p>
+                                <blockquote>I had heard a lot about Narayana Seva Sansthan and I respect them for their wonderful work. My blessings are with you.</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="testimonial-item">
+                                <img src="images/testimonial3.jpg" alt="Sri Sri Ravi Shankar">
+                                <h3>Sri Sri Ravi Shankar</h3>
+                                <p>Founder, Art of Living Foundation</p>
+                                <blockquote>Narayan Seva Sansthan is working hard day and night for the welfare of the poor mass community, bringing back happiness to people's faces.</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--chat bot-->
+<br><br>
+ <div class="chat-widget" id="chat-widget">
+        <div class="chat-button" id="chat-button">
+            <i class="fas fa-comments"></i>
+        </div>
+
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+            <h5>Chat Assistant</h5>
+            <button class="close-chat" id="close-chat">&times;</button>
+        </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">Hello! How can I help you today?</div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer Section -->
+<footer>
+    <div class="container py-5" id="contact">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h6 class="text-primary text-uppercase">Contact Us</h6>
+                    <h1>Get In Touch</h1>
+                    <!-- WhatsApp Button -->
+                    <div class="whatsapp-contact mt-3">
+                        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="contact-subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" id="contact-message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary px-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+   
+
+
+<!-- Add this right before the closing body tag -->
+<div class="floating-donate">
+    <button id="floating-donate-btn" class="floating-donate-btn">Donate Now</button>
+</div>
+
+<div id="donate-modal" class="donate-modal">
+    <div class="donate-modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Make a Donation</h2>
+        <form id="floating-donate-form">
+            <div class="form-group">
+                <label for="donor-name">Name</label>
+                <input type="text" id="donor-name" required>
+            </div>
+            <div class="form-group">
+                <label for="donor-email">Email</label>
+                <input type="email" id="donor-email" required>
+            </div>
+            <div class="form-group">
+                <label>Enter the Amount</label>
+                <div class="amount-buttons">
+                    <button type="button" class="amount-btn" data-amount="100">$100</button>
+                    <button type="button" class="amount-btn" data-amount="200">$200</button>
+                    <button type="button" class="amount-btn" data-amount="500">$500</button>
+                </div>
+                <input type="number" id="custom-amount" placeholder="Custom Amount" min="1">
+            </div>
+            <button type="submit" class="submit-btn">Complete Donation</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <script src="js/contact-handler.js"></script>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Bootstrap and jQuery JS  for float donate now-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+     <!-- Bootstrap Bundle with Popper for navbar -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<!-- 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax.min.js"></script>
+        <script src="js/auth.js"></script>
+        <script src="js/about.js"></script>
+        <script src="js/nav-handler.js"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+
+</html>

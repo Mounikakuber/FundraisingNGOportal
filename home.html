@@ -1,0 +1,645 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NGO Portal - Home</title>
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/home.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!-- Jarallax CSS (optional for default styles) -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.css">
+       <!-- Jarallax JS -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <span>+1234567890</span>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <span>info@ngoporatal.com</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1 class="text-primary">NGO Portal</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <span id="user-info" class="me-3"></span>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                              <!-- <a class="nav-link" href=""></a> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#causes">Causes</a>
+                             <!-- <a class="nav-link" href="causes.html">Causes</a> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Events</a>
+                                  <!-- <a class="nav-link" href="events.html">Events</a> -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#gallery">Gallery</a> -->
+                              <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary ms-3" href="#">Donate Now</a>
+                        </li>
+                        <li>
+                        <div class="d-flex align-items-center">
+                        <button id="logout" class="btn btn-outline-danger"> Logout</button>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Carousel -->
+       <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel"> <!-- Changed id to mainCarousel -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/caro1.jpg" class="d-block w-100" alt="Carousel Image 1">
+                    <div class="carousel-caption">
+                        <h1>Let's Help Those Who Need</h1>
+                        <p>Supporting communities through sustainable development</p>
+                        <a href="#" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/caro2.jpg" class="d-block w-100" alt="Carousel Image 2">
+                    <div class="carousel-caption">
+                        <h1>Together We Can Make A Difference</h1>
+                        <p>Join us in creating positive change</p>
+                        <a href="#" class="btn btn-primary">Get Involved</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/caro3.jpg" class="d-block w-100" alt="Carousel Image 3">
+                    <div class="carousel-caption">
+                        <h1>Support Our Cause</h1>
+                        <p>Every contribution matters</p>
+                        <a href="#" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    <br><br>
+
+<!---about us--->
+    <br><br>
+    <div id="about" class="container">
+        <div class="row">
+            <!-- Image Section -->
+            <div class="col-lg-6 image-section">
+                <img src="images/about.jpg" alt="Charity Image" class="animated-image">
+            </div>
+    <br><br>
+            <!-- About Text Section -->
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>Learn About Us</p>
+                    <h2>Worldwide non-profit charity organization</h2>
+                </div>
+                <div class="about-tab">
+    <ul class="nav nav-pills nav-justified mb-3">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#tab-content-1">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#tab-content-2">Mission</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#tab-content-3">Vision</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="tab-content-1" class="tab-pane fade show active">
+            NGOs are private agencies that can support development at local, national, and international levels by organizing indigenous groups.
+        </div>
+        <div id="tab-content-2" class="tab-pane fade">
+            The Foundation for Social Change and Inclusion works for the social development and integration of underprivileged individuals, groups, and communities.
+        </div>
+        <div id="tab-content-3" class="tab-pane fade">
+            Our work aims to break the vicious cycle of poverty and social isolation and to restore hope for a better future.
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>What We Do?</p>
+                        <h2>We believe that we can save more lifes with you</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-diet"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Healthy Food</h3>
+                                    <p>Organic Yogurt. Men and women between 19 and 50 years of age need 1000 milligrams of calcium a day and 1200 milligrams if 50 or older</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-water"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Pure Water</h3>
+                                    <p>While most sources of public drinking water are closely regulated and safe to drink, many prefer to drink purified water.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-healthcare"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Health Care</h3>
+                                    <p>Health care is delivered by health professionals and allied health fields.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-education"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Primary Education</h3>
+                                    <p>Primary education is typically the first stage of formal education, coming after preschool/kindergarten and before secondary school.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-home"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Residence Facilities</h3>
+                                    <p>Residence or residence facility means multi-family facilities including apartments, townhouses, condominiums, dormitories, hotels, motels, resorts, extended care facilities, or similar entities, facilities, or structures.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-social-care"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Social Care</h3>
+                                    <p>Social care is a term that generally describes all forms of personal care and other practical assistance for children, young people and adults who need extra support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- Countdown Goals -->
+        <!-- <div class="statistics-section">
+        <div class="container">
+        <div class="image-overlay"> -->
+        <!-- Background Image -->
+        <!-- <img src="C:\Users\MOUNIKA M K\OneDrive\Desktop\FundRaiseApp\images\handstogether.jpeg" alt="Hands Together" class="background-image">
+                 -->
+        <!-- Transparent Overlay with Counters -->
+                <!-- <div class="transparent-overlay">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="counter">
+                                <i class="fas fa-globe"></i>
+                                <h2 class="count" data-target="100">0</h2>
+                                <p>Countries</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="counter">
+                                <i class="fas fa-users"></i>
+                                <h2 class="count" data-target="300">0</h2>
+                                <p>Volunteers</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="counter">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <h2 class="count" data-target="10000">0</h2>
+                                <p>Our Goal</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="counter">
+                                <i class="fas fa-donate"></i>
+                                <h2 class="count" data-target="3000">0</h2>
+                                <p>Raised</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Countdown Goals -->
+<div class="statistics-section">
+    <div class="container">
+        <div class="image-overlay">
+            <!-- Background Image -->
+            <img src="images/handstogether.jpeg" alt="Hands Together" class="background-image">
+            
+            <!-- Transparent Overlay with Counters -->
+            <div class="transparent-overlay">
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="counter">
+                            <i class="fas fa-globe"></i>
+                            <h2 class="count" data-target="100">0</h2>
+                            <p>Countries</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter">
+                            <i class="fas fa-users"></i>
+                            <h2 class="count" data-target="300">0</h2>
+                            <p>Volunteers</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h2 class="count" data-target="10000">0</h2>
+                            <p>Our Goal</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter">
+                            <i class="fas fa-donate"></i>
+                            <h2 class="count" data-target="3000">0</h2>
+                            <p>Raised</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Causes Section -->
+     
+    <div id="causes" class="causes-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase">Our Causes</h6>
+                <h1>Causes Around the World</h1>
+            </div>
+            <div class="causes-row">
+                <!-- Cause Card 1 -->
+                <div class="cause-card">
+                    <div class="card-img-container">
+                        <img src="images/cause1.jpeg" alt="Cause 1" class="card-img">
+                    </div>
+                    <div class="card-body cause-card-body">
+                        <h5 class="cause-title">Education for All</h5>
+                        <p class="cause-description">Providing access to quality education for underprivileged children worldwide.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between cause-goal">
+                            <span>Raised: $6,000</span>
+                            <span>Goal: $10,000</span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <!-- <button class="btn btn-primary learn-more">Learn More</button> -->
+                            <button class="btn btn-success donate-now">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cause Card 2 -->
+                <div class="cause-card">
+                    <div class="card-img-container">
+                        <img src="images/cause2.jpeg" alt="Cause 2" class="card-img">
+                    </div>
+                    <div class="card-body cause-card-body">
+                        <h5 class="cause-title">Clean Water Initiative</h5>
+                        <p class="cause-description">Ensuring access to clean and safe drinking water in remote areas.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between cause-goal">
+                            <span>Raised: $7,500</span>
+                            <span>Goal: $10,000</span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <!-- <button class="btn btn-primary learn-more">Learn More</button> -->
+                            <button class="btn btn-success donate-now">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cause Card 3 -->
+                <div class="cause-card">
+                    <div class="card-img-container">
+                        <img src="images/cause3.jpeg" alt="Cause 3" class="card-img">
+                    </div>
+                    <div class="card-body cause-card-body">
+                        <h5 class="cause-title">Health and Wellness</h5>
+                        <p class="cause-description">Providing medical support and wellness programs to underprivileged areas.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between cause-goal">
+                            <span>Raised: $5,000</span>
+                            <span>Goal: $10,000</span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <!-- <button class="btn btn-primary learn-more">Learn More</button> -->
+                            <button class="btn btn-success donate-now">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cause Card 4 -->
+                <div class="cause-card">
+                    <div class="card-img-container">
+                        <img src="images/cause4.jpeg" alt="Cause 4" class="card-img">
+                    </div>
+                    <div class="card-body cause-card-body">
+                        <h5 class="cause-title">Disaster Relief</h5>
+                        <p class="cause-description">Helping communities rebuild and recover from natural disasters</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between cause-goal">
+                            <span>Raised: $8,000</span>
+                            <span>Goal: $10,000</span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <!-- <button class="btn btn-primary learn-more">Learn More</button> -->
+                            <button class="btn btn-success donate-now">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div id="events" class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary text-uppercase">Upcoming Events</h6>
+            <h1>Join Our Activities</h1>
+        </div>
+        <div class="row g-4">
+            <!-- Event 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="event-item">
+                    <div class="event-img">
+                        <img src="images/event-1.jpeg" alt="Event 1" class="img-fluid rounded">
+                    </div>
+                    <div class="event-details p-4">
+                        <h5 class="text-primary">Fundraising Gala</h5>
+                        <p><i class="fas fa-calendar-alt"></i> 15 Jan 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> City Convention Center</p>
+                        <p>Join us for an evening of entertainment, networking, and fundraising to support our ongoing initiatives.</p>
+                        <a href="#contact-form-section" class="btn btn-primary join-now">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="event-item">
+                    <div class="event-img">
+                        <img src="images/event-2.jpeg" alt="Event 2" class="img-fluid rounded" style="height: 520px;">
+                    </div>
+                    <div class="event-details p-4">
+                        <h5 class="text-primary">Volunteer Meetup</h5>
+                        <p><i class="fas fa-calendar-alt"></i> 28 Feb 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Community Hall, Downtown</p>
+                        <p>Connect with like-minded individuals and learn how you can make a difference as a volunteer.</p>
+                        <a href="#contact-form-section" class="btn btn-primary join-now">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="event-item">
+                    <div class="event-img">
+                        <img src="images/event-3.jpeg" alt="Event 3" class="img-fluid rounded" style="height: 520px;" width="450px" >
+                    </div>
+                    <div class="event-details p-4">
+                        <h5 class="text-primary">Health Camp</h5>
+                        <p><i class="fas fa-calendar-alt"></i> 10 Mar 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Village Outreach Center</p>
+                        <p>Participate in our free health camp aimed at providing medical services to rural communities.</p>
+                        <a href="#contact-form-section" class="btn btn-primary join-now">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="contact-form-section" class="container py-5">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <!-- Your contact form fields here -->
+        </form>
+    </div>
+
+
+    <div class="donation-section">
+        <img src="images/donate.jpg" alt="Donation" style="width: 1000px;">
+        <!-- <div class="donation-overlay"> -->
+            <div class="donation-form">
+                <h2 class="donation-title">Let's Donate to Needy People</h2>
+                <p class="donation-subtitle">A small contribution can bring a big change.</p>
+                <form id="donation-form">
+                    <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                    <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+                    <input type="text" id="contact" class="form-input" placeholder="Your Contact Number" required>
+                    <div class="donation-amount">
+                        <button type="button" class="amount-btn" data-amount="100">$100</button>
+                        <button type="button" class="amount-btn" data-amount="200">$200</button>
+                        <button type="button" class="amount-btn" data-amount="300">$300</button>
+                    </div>
+                    <input type="number" id="custom-amount" class="form-input" placeholder="Custom Amount" min="1">
+                    <button type="submit" class="donate-btn">DONATE NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="whatsapp-float">
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    </div>
+
+<br><br>
+<!-- Add this right before the closing body tag -->
+<div class="floating-donate">
+    <button id="floating-donate-btn" class="floating-donate-btn">Donate Now</button>
+</div>
+
+<div id="donate-modal" class="donate-modal">
+    <div class="donate-modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Make a Donation</h2>
+        <form id="floating-donate-form">
+            <div class="form-group">
+                <label for="donor-name">Name</label>
+                <input type="text" id="donor-name" required>
+            </div>
+            <div class="form-group">
+                <label for="donor-email">Email</label>
+                <input type="email" id="donor-email" required>
+            </div>
+            <div class="form-group">
+                <label>Enter the Amount</label>
+                <!-- <div class="amount-buttons">
+                    <button type="button" class="amount-btn" data-amount="100">$100</button>
+                    <button type="button" class="amount-btn" data-amount="200">$200</button>
+                    <button type="button" class="amount-btn" data-amount="500">$500</button>
+                </div> -->
+                <input type="number" id="custom-amount" placeholder="Custom Amount" min="1">
+            </div>
+            <button type="submit" class="submit-btn">Complete Donation</button>
+        </form>
+    </div>
+</div>
+
+
+<br><br>
+ <div class="chat-widget" id="chat-widget">
+        <div class="chat-button" id="chat-button">
+            <i class="fas fa-comments"></i>
+        </div>
+
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+            <h5>Chat Assistant</h5>
+            <button class="close-chat" id="close-chat">&times;</button>
+        </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">Hello! How can I help you today?</div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+<footer>
+    <div class="container py-5" id="contact">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h6 class="text-primary text-uppercase">Contact Us</h6>
+                    <h1>Get In Touch</h1>
+                    <!-- WhatsApp Button -->
+                    <div class="whatsapp-contact mt-3">
+                        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="contact-subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" id="contact-message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary px-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+        <script src="js/contact-handler.js"></script>
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/auth.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+    </html>

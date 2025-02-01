@@ -1,0 +1,805 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+.navbar {
+    padding: 1rem;
+}
+  .navbar {
+      margin-bottom: 20px;
+  }
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffc107 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-right: 15px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+}
+
+.dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-outline-danger {
+    color: #fff;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+
+.section-header {
+    /* text-align: left;
+    margin-bottom: 40px; */
+
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+}
+
+.section-header p {
+    /* font-family: 'Poppins', sans-serif;
+    color: #FFA500;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500; */
+
+        margin-bottom: 5px;
+        position: relative;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #FDBE33;
+}
+
+.section-header h2 {
+    /* font-family: 'Poppins', sans-serif;
+    color: #444;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    max-width: 500px; */
+
+    margin: 0;
+        font-size: 45px;
+        font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+    .section-header h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-header h2 {
+        font-size: 35px;
+    }
+}
+
+
+
+.about-tab {
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+
+.section-header {
+    margin-bottom: 30px;
+}
+.about-tab .nav-pills {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute tabs evenly */
+    border-bottom: 1px solid #b6511f;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    /* Add spacing below */
+}
+
+.about-tab .nav-link {
+    color: #666;
+    font-size: 18px;
+    /* Larger text for readability */
+    font-weight: 400;
+    padding: 0;
+    /* Remove padding for a cleaner text style */
+    background: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.about-tab .nav-link:hover {
+    color: #FFA500;
+}
+
+.about-tab .nav-link.active {
+    color: #FFA500;
+    font-weight: 700;
+    /* Bold active link */
+    position: relative;
+}
+
+.about-tab .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #FFA500;
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+    width: 100%;
+    /* Highlight full width for active */
+}
+
+.about-tab .nav-link:hover::after {
+    width: 100%;
+    /* Smooth underline animation on hover */
+}
+
+.about-tab .nav-link:not(.active)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    height: 3px;
+    background-color: #FFA500;
+    border-radius: 2px;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-tab .nav-link:hover::after {
+    left: 0;
+    width: 100%;
+    /* Animate underline expansion */
+}
+
+.tab-content {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .col-lg-6 {
+        padding: 40px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+}
+
+/*---what we do---*/
+
+.section-header {
+    margin-top: 100px;
+    /* Adds space above the header */
+    margin-bottom: 50px;
+    /* Ensures space below the header */
+    text-align: center;
+}
+
+.section-header p {
+    font-size: 20px;
+    color: #FF6F61;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    /* Adjust font size to fit in a single row */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0;
+    line-height: 1.2;
+    /* Ensure tighter line height */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+   text-align: center;
+    text-overflow: ellipsis;
+    /* Optional: Add ellipsis for truncated text if needed */
+}
+
+.service .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+
+.service-item:hover {
+    background: #FF6F61;
+    color: #ffffff;
+}
+
+.service-icon {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #FF6F61;
+}
+
+.service-item:hover .service-icon {
+    color: #ffffff;
+}
+
+   /* Add these styles for background images */
+   .hero-section {
+       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/about1.jpg');
+       background-size: cover;
+       background-position: center;
+       height: 400px;
+       position: relative;
+   }
+
+   .about-image {
+       background: url('../images/about3.jpg');
+       background-size: cover;
+       background-position: center;
+       height: 800px;
+       width: 600px;
+   }
+
+   .statistics-section {
+       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/handstogether.jpeg');
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+       padding: 100px 0;
+       color: #ffffff;
+   }
+
+   /*--service end--*
+
+ /* Counter Section */
+ .counter i {
+     color: #f04a24;
+     margin-bottom: 15px;
+ }
+
+ .animated {
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+ }
+   .testimonial {
+       padding: 60px 0;
+       background: #fff;
+   }
+
+   .section-header {
+       margin-bottom: 40px;
+   }
+
+   .section-header p {
+       color: #FFA500;
+       font-size: 18px;
+       margin-bottom: 5px;
+       text-align: center;
+   }
+
+   .section-header h2 {
+       color: #4B0082;
+       font-size: 32px;
+       font-weight: 700;
+       text-align: center;
+   }
+
+   .carousel-inner {
+       padding: 20px 0;
+   }
+
+   .testimonial-item {
+       text-align: center;
+       background: #fff;
+       padding: 30px;
+       transition: transform 0.3s;
+       height: 100%;
+       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+       border-radius: 10px;
+   }
+
+   .testimonial-item:hover {
+       transform: translateY(-10px);
+   }
+
+   .testimonial-item img {
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       margin-bottom: 15px;
+       object-fit: cover;
+   }
+
+   .testimonial-item h3 {
+       font-size: 20px;
+       color: #333;
+       margin-bottom: 5px;
+   }
+
+   .testimonial-item p {
+       color: #666;
+       font-style: italic;
+       margin-bottom: 15px;
+   }
+
+   .testimonial-item blockquote {
+       font-size: 16px;
+       color: #555;
+       line-height: 1.6;
+       margin: 0;
+       padding: 15px 0;
+   }
+
+   .carousel-indicators {
+       bottom: -50px;
+   }
+
+   .carousel-indicators button {
+       width: 12px;
+       height: 12px;
+       border-radius: 50%;
+       background-color: #FFA500;
+       border: none;
+       margin: 0 5px;
+   }
+
+   .carousel-indicators .active {
+       background-color: #4B0082;
+   }
+
+
+
+ /*footer contact popup style*/
+ .popup-message {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: #fff;
+     border: 1px solid #ccc;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     z-index: 1000;
+     padding: 20px;
+     border-radius: 8px;
+ }
+
+ .popup-message .popup-content {
+     text-align: center;
+ }
+
+ .popup-message h4 {
+     margin-bottom: 10px;
+ }
+
+ .popup-message p {
+     margin-bottom: 20px;
+ }
+
+ .popup-message button {
+     background: #007bff;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .popup-message button:hover {
+     background: #0056b3;
+ }
+     
+ /*chat bot style*/
+                 .chat-widget {
+                     position: fixed;
+                     bottom: 20px;
+                     right: 20px;
+                     z-index: 1000;
+                 }
+        
+                 .chat-button {
+                     width: 60px;
+                     height: 60px;
+                     border-radius: 50%;
+                     background-color: #2563eb;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     cursor: pointer;
+                     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+                 }
+        
+                 .chat-container {
+                     position: absolute;
+                     bottom: 80px;
+                     right: 0;
+                     width: 300px;
+                     height: 400px;
+                     background: white;
+                     border-radius: 12px;
+                     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                     display: none;
+                     flex-direction: column;
+                 }
+        
+                 .chat-header {
+                     padding: 16px;
+                     background: #2563eb;
+                     color: white;
+                     border-radius: 12px 12px 0 0;
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+                 }
+        
+                 .chat-header h5 {
+                     margin: 0;
+                     font-size: 16px;
+                 }
+        
+                 .close-chat {
+                     background: none;
+                     border: none;
+                     color: white;
+                     font-size: 20px;
+                     cursor: pointer;
+                 }
+        
+                 .chat-messages {
+                     flex: 1;
+                     overflow-y: auto;
+                     padding: 16px;
+                 }
+        
+                 .message {
+                     margin-bottom: 12px;
+                     max-width: 80%;
+                 }
+        
+                 .bot-message {
+                     margin-right: auto;
+                 }
+        
+                 .user-message {
+                     margin-left: auto;
+                 }
+        
+                 .message-content {
+                     padding: 8px 12px;
+                     border-radius: 16px;
+                     background: #f3f4f6;
+                     font-size: 14px;
+                 }
+        
+                 .user-message .message-content {
+                     background: #2563eb;
+                     color: white;
+                 }
+        
+                 .chat-input-container {
+                     padding: 16px;
+                     border-top: 1px solid #e5e7eb;
+                     display: flex;
+                     gap: 8px;
+                 }
+        
+                 #chat-input {
+                     flex: 1;
+                     padding: 8px 12px;
+                     border: 1px solid #e5e7eb;
+                     border-radius: 20px;
+                     outline: none;
+                 }
+        
+                 #send-message {
+                     background: #2563eb;
+                     color: white;
+                     border: none;
+                     border-radius: 50%;
+                     width: 36px;
+                     height: 36px;
+                     cursor: pointer;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                 }
+        
+                 #send-message:hover {
+                     background: #1d4ed8;
+                 }
+
+                 /*contact style*/
+                                 .whatsapp-contact {
+                                     margin: 20px 0;
+                                 }
+                
+                                 .whatsapp-btn {
+                                     display: inline-flex;
+                                     align-items: center;
+                                     padding: 10px 20px;
+                                     background-color: #25D366;
+                                     color: white;
+                                     border-radius: 30px;
+                                     text-decoration: none;
+                                     transition: all 0.3s ease;
+                                     font-weight: 500;
+                                 }
+                
+                                 .whatsapp-btn:hover {
+                                     background-color: #128C7E;
+                                     color: white;
+                                     transform: translateY(-2px);
+                                     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+                                 }
+                
+                                 .whatsapp-btn i {
+                                     font-size: 24px;
+                                     margin-right: 10px;
+                                 }
+                
+                                 /* Optional: Add a floating WhatsApp button */
+                                 .whatsapp-float {
+                                     position: fixed;
+                                     bottom: 150px;
+                                     /* Positioned above your donate button */
+                                     right: 90px;
+                                     z-index: 999;
+                                 }
+                
+                                 .whatsapp-float .whatsapp-btn {
+                                     width: 60px;
+                                     height: 60px;
+                                     border-radius: 50%;
+                                     padding: 0;
+                                     display: flex;
+                                     align-items: center;
+                                     justify-content: center;
+                                 }
+                
+                                 .whatsapp-float .whatsapp-btn i {
+                                     margin: 0;
+                                     font-size: 32px;
+                                 }
+                
+                
+                                 /* WhatsApp positioning */
+                                 .whatsapp-float {
+                                     position: fixed;
+                                     bottom: 80px;
+                                     /* Moved up to make room for chat button */
+                                     right: 20px;
+                                     z-index: 1000;
+                                 }
+
+
+/*floating donate now button*/
+/* Floating Button Styles  donate*/
+.floating-donate {
+    position: fixed;
+    bottom: 150px;
+    right: 90px;
+    z-index: 999;
+}
+
+.floating-donate-btn {
+    background-color: #dc3545;
+    position: fixed;
+    right: 90px;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.floating-donate-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Modal Styles  donate */
+.donate-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.donate-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.amount-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.amount-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.amount-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.amount-btn.selected {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .floating-donate {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-donate-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}

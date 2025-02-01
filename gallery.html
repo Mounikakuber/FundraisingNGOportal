@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Portal</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="js/nav-handler.js" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="home.html" class="navbar-brand">NGO Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="causes.html" class="nav-link">Causes</a></li>
+                    <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                     <button id="logout" class="btn btn-outline-danger"> Logout</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container py-5">
+        <h1 class="text-center">Welcome to NGO Portal</h1>
+        <p class="text-center">Making the world a better place, one step at a time.</p>
+          <div class="view-image">
+        <img src="https://images.unsplash.com/photo-1668954206766-404e981f57f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60." alt="">
+        <span>X</span>
+    </div>
+
+    <div class="image-container">
+        <img src="images/about-1.jpeg" alt="">
+        <img src="images/about.jpg" alt="">
+        <img src="images/about1.jpg" alt="">
+        <img src="images/about2.jpg" alt="">
+        <img src="images/about3.jpg" alt="">
+        <img src="images/caro1.jpg" alt="">
+        <img src="images/caro2.jpg" alt="">
+        <img src="images/caro3.jpg" alt="">
+        <img src="images/carousel-1.jpeg" alt="">
+        <img src="images/carousel-2.jpeg" alt="">
+        <img src="images/carousel-3.jpeg" alt="">
+        <img src="images/carousel-4.jpeg" alt="">
+        <img src="images/carousel-5.jpeg" alt="">
+        <img src="images/carousel-6.jpeg" alt="">
+        <img src="images/cause1.jpeg" alt="">
+        <img src="images/cause2.jpeg" alt="">
+       </div>
+    </div>
+
+   
+<!--chat bot-->
+<br><br>
+ <div class="chat-widget" id="chat-widget">
+        <div class="chat-button" id="chat-button">
+            <i class="fas fa-comments"></i>
+        </div>
+
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+            <h5>Chat Assistant</h5>
+            <button class="close-chat" id="close-chat">&times;</button>
+        </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">Hello! How can I help you today?</div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+             <div class="container py-5" id="contact">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h6 class="text-primary text-uppercase">Contact Us</h6>
+                    <h1>Get In Touch</h1>
+                    <!-- WhatsApp Button -->
+                    <div class="whatsapp-contact mt-3">
+                        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="contact-subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" id="contact-message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary px-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+            <p>&copy; 2025 NGO Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- Add this right before the closing body tag -->
+<div class="floating-donate">
+    <button id="floating-donate-btn" class="floating-donate-btn">Donate Now</button>
+</div>
+
+<div id="donate-modal" class="donate-modal">
+    <div class="donate-modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Make a Donation</h2>
+        <form id="floating-donate-form">
+            <div class="form-group">
+                <label for="donor-name">Name</label>
+                <input type="text" id="donor-name" required>
+            </div>
+            <div class="form-group">
+                <label for="donor-email">Email</label>
+                <input type="email" id="donor-email" required>
+            </div>
+            <div class="form-group">
+                <label>Enter the Amount</label>
+                <div class="amount-buttons">
+                    <button type="button" class="amount-btn" data-amount="100">$100</button>
+                    <button type="button" class="amount-btn" data-amount="200">$200</button>
+                    <button type="button" class="amount-btn" data-amount="500">$500</button>
+                </div>
+                <input type="number" id="custom-amount" placeholder="Custom Amount" min="1">
+            </div>
+            <button type="submit" class="submit-btn">Complete Donation</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="js/gallery.js"></script>
+    
+
+<!-- Add before closing body tag -->
+<script src="js/contact-handler.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
